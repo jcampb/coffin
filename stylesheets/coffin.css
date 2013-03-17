@@ -26,7 +26,7 @@ body {
 
 .page {
   position: relative;
-  z-index: 10;
+  z-index: 20;
   margin-left: 270px;
   background: #fff;
   width: auto;
@@ -37,13 +37,22 @@ body {
 }
 
 .coffin {
+  background-color:#3b3b3b;
   position: fixed;
   top: 0;
   bottom: 0;
-  left: 0;
   width: 280px;
+  overflow: auto;
+}
+
+.coffin-left{
+  left: 0;
   margin-left: 0;
   overflow: auto;
+}
+.coffin-right  {
+  right: 0;
+  margin-left: 0;
 }
 
 .coffin .pillow {
@@ -73,9 +82,12 @@ body {
   box-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
 }
 
-.coffin .nav li a:hover,
-.coffin .nav li a.active {
-  background: rgba(0, 0, 0, 0.1);
+.coffin-active{
+   z-index: 19;
+}
+
+.nav .right li a  {
+color:red;
 }
 
 /* #Tablet (Portrait)
